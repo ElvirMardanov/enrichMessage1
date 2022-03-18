@@ -1,32 +1,11 @@
 package storage;
 
 public class StorageMeccage {
-    private final String type = "MSIDN";
     private String action;
     private String page;
     private String msisdn;
     private String firstName;
     private String lastName;
-
-    public String getType() {
-        return type;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getAction() {
         return action;
@@ -52,14 +31,30 @@ public class StorageMeccage {
         this.msisdn = msisdn;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     @Override
     public String toString() {
-        return "Storage message"+
-                "action='" + action + '\'' +
-                ", page='" + page +
+        return  "{" +
+                "action= " + action +
+                ", page= " + page +
                 ", msisdn= " + msisdn +
                 ", firstName= " + firstName +
-                ", lastName= " + lastName;
+                ", lastName= " + lastName + "}";
     }
 }
 

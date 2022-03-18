@@ -3,3 +3,10 @@
     "page": "book_card",
     "msisdn": "88005553535"
 }
+{
+    "action": "button_click",
+    "page": "book_card",
+    "msisdn": "88005553535",
+    "firstName": "FirstName",
+    "lastName": "LastName"
+}

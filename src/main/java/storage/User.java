@@ -1,15 +1,15 @@
 package storage;
 
 public class User {
+    private String msisdn;
+    private String firstName;
+    private String lastName;
+
     public User(String msisdn, String firstName, String lastName) {
         this.msisdn = msisdn;
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
-    private String msisdn;
-    private String firstName;
-    private String lastName;
 
     public String getMsisdn() {
         return msisdn;
