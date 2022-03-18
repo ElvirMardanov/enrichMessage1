@@ -1,4 +1,4 @@
-import Message.MessageValidator;
+import Message.MessageEnrich;
 
 public class Main {
 
@@ -8,8 +8,7 @@ public class Main {
                 "    \"page\": \"book_card\",\n" +
                 "    \"msisdn\": \"88005553535\"\n" +
                 "}";
-        MessageValidator messageValidator = new MessageValidator(json);
-        messageValidator.readMessage(json);
-        System.out.println(messageValidator.enricMessage());
+        MessageEnrich messageEnrich = new MessageEnrich(json);
+        messageEnrich.enrichMessage();
     }
 }
